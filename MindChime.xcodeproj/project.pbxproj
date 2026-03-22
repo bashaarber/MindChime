@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042C51385E1937669AEDC514 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72D383DCC63D02DAC2EE50D /* HabitListView.swift */; };
+		12E663C9E352E8FCC013F92C /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5275947B8C2333AEC83F38F /* AlarmListView.swift */; };
+		16B21D342DB286E82FCBA286 /* QuoteCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1D392417397ADEE5A9A6B0 /* QuoteCategory.swift */; };
+		17E1BF895D612F504EED75BB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767A298DA72A1F78B12A1F1 /* SettingsView.swift */; };
+		2857A62C04952809DE01BF3C /* HabitCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D54B872E7645AF44F87884D /* HabitCompletion.swift */; };
+		2EF542D8F76425BCC3F9A767 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF75EA62598C89A9373840 /* NotificationService.swift */; };
+		339CD39ACEABEA071FC14B27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89071A5EF4B1DFB41CED1998 /* ContentView.swift */; };
+		35F3EA58D8BABF36BFBC220D /* QuoteSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA589F1929FD5142CC5FA23 /* QuoteSeeder.swift */; };
+		42C34C88A8B01D591089A4B0 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32899D1D72A3D3D84A9B2B0D /* Quote.swift */; };
+		4BAE82CF43FE228F64A0DCD4 /* QuoteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC96DA5F3904337F8CD6A7A /* QuoteCardView.swift */; };
+		4D586C22C9A6A76F984D06C0 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790E82E9730527C9F4B8302F /* AlarmViewModel.swift */; };
+		6E9CADFA5635B0169667BF21 /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1A5C44AAB4D770DB943F5 /* QuotesViewModel.swift */; };
+		6FD6BF845372FB2961263B03 /* HabitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D4146112D2787168E51BA /* HabitRowView.swift */; };
+		755591639D3DB202F009038D /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC4FAEADE4F770E2045850 /* HabitsViewModel.swift */; };
+		9C57685A3B0C3E2982B00CC6 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D282EF76778F22B6531D52EB /* AudioService.swift */; };
+		9E7240F0CADAB9093A10430F /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E8CA1A4AF9D8F8325C03B4 /* Habit.swift */; };
+		AA7F7CA60811FB11D77337D4 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B30E181B9003B062735419 /* SpeechService.swift */; };
+		B66CFE47E4F1EB7B3A6BE12D /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48217A004CD1A562390B5E41 /* AddHabitView.swift */; };
+		BB144C3740378DDDBA573F40 /* QuoteFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3A559F9B09CDECDE95D3EF /* QuoteFeedView.swift */; };
+		C0B247817CC592AE0AB7FD2C /* MindChimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168D695B559C3DC81B5CD1E /* MindChimeApp.swift */; };
+		D325D051C66A4C8ECA3F79F8 /* ChimeAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7603440C6685C1470AE5E46 /* ChimeAlarm.swift */; };
+		EADD44E8803A55FAB7C5F756 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6F1A68581668F5FB2066C2 /* ColorExtension.swift */; };
+		F36BB52934A0745C1BC92E59 /* AlarmDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA407CADC2CCA6C6C92B08 /* AlarmDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0767A298DA72A1F78B12A1F1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0D1D392417397ADEE5A9A6B0 /* QuoteCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCategory.swift; sourceTree = "<group>"; };
+		101008DC6DFE33240AFA897B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1BEA407CADC2CCA6C6C92B08 /* AlarmDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailView.swift; sourceTree = "<group>"; };
+		25E8CA1A4AF9D8F8325C03B4 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		32899D1D72A3D3D84A9B2B0D /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		48217A004CD1A562390B5E41 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
+		4E33C37C11B8A0A1117818AA /* MindChime.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MindChime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6168D695B559C3DC81B5CD1E /* MindChimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindChimeApp.swift; sourceTree = "<group>"; };
+		790E82E9730527C9F4B8302F /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
+		7D54B872E7645AF44F87884D /* HabitCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCompletion.swift; sourceTree = "<group>"; };
+		838D4146112D2787168E51BA /* HabitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRowView.swift; sourceTree = "<group>"; };
+		89071A5EF4B1DFB41CED1998 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8DC96DA5F3904337F8CD6A7A /* QuoteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCardView.swift; sourceTree = "<group>"; };
+		96DF75EA62598C89A9373840 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		9C3A559F9B09CDECDE95D3EF /* QuoteFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteFeedView.swift; sourceTree = "<group>"; };
+		A72D383DCC63D02DAC2EE50D /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
+		AAA589F1929FD5142CC5FA23 /* QuoteSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteSeeder.swift; sourceTree = "<group>"; };
+		B5275947B8C2333AEC83F38F /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
+		B5B30E181B9003B062735419 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		BC6F1A68581668F5FB2066C2 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		C6AC4FAEADE4F770E2045850 /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
+		CDA1A5C44AAB4D770DB943F5 /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		D282EF76778F22B6531D52EB /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		F7603440C6685C1470AE5E46 /* ChimeAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimeAlarm.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0907FACA6978526D128978EF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BC6F1A68581668F5FB2066C2 /* ColorExtension.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		353DFA81067464E379BF9CC4 = {
+			isa = PBXGroup;
+			children = (
+				CF6E29311EAA9823C8CE1237 /* MindChime */,
+				6AD686EDFB32EDD1BF551AAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E2AAEB47C05848213FB3780 /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				8DC96DA5F3904337F8CD6A7A /* QuoteCardView.swift */,
+				9C3A559F9B09CDECDE95D3EF /* QuoteFeedView.swift */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+		50E11C35BB28844572D9E1B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D282EF76778F22B6531D52EB /* AudioService.swift */,
+				96DF75EA62598C89A9373840 /* NotificationService.swift */,
+				AAA589F1929FD5142CC5FA23 /* QuoteSeeder.swift */,
+				B5B30E181B9003B062735419 /* SpeechService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		65A622D953CDEAA2E2785B72 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0767A298DA72A1F78B12A1F1 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6AD686EDFB32EDD1BF551AAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E33C37C11B8A0A1117818AA /* MindChime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A03AA912FDE03D1F2F3B68EA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				790E82E9730527C9F4B8302F /* AlarmViewModel.swift */,
+				C6AC4FAEADE4F770E2045850 /* HabitsViewModel.swift */,
+				CDA1A5C44AAB4D770DB943F5 /* QuotesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AABE2B3B3B32366EA928E91D /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				1BEA407CADC2CCA6C6C92B08 /* AlarmDetailView.swift */,
+				B5275947B8C2333AEC83F38F /* AlarmListView.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		B77085579E2A8E2E4EFE7144 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6168D695B559C3DC81B5CD1E /* MindChimeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C63BA3004DD3FD30E12C65C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF6E29311EAA9823C8CE1237 /* MindChime */ = {
+			isa = PBXGroup;
+			children = (
+				101008DC6DFE33240AFA897B /* Info.plist */,
+				B77085579E2A8E2E4EFE7144 /* App */,
+				DCF64B561C4E5C87F7A2DC8F /* Models */,
+				C63BA3004DD3FD30E12C65C2 /* Resources */,
+				50E11C35BB28844572D9E1B1 /* Services */,
+				A03AA912FDE03D1F2F3B68EA /* ViewModels */,
+				FF23BE8287FE6C822CD5ACBD /* Views */,
+			);
+			path = MindChime;
+			sourceTree = "<group>";
+		};
+		DCF64B561C4E5C87F7A2DC8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7603440C6685C1470AE5E46 /* ChimeAlarm.swift */,
+				25E8CA1A4AF9D8F8325C03B4 /* Habit.swift */,
+				7D54B872E7645AF44F87884D /* HabitCompletion.swift */,
+				32899D1D72A3D3D84A9B2B0D /* Quote.swift */,
+				0D1D392417397ADEE5A9A6B0 /* QuoteCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4E6DEE44E058923C5EBB0E7 /* Habits */ = {
+			isa = PBXGroup;
+			children = (
+				48217A004CD1A562390B5E41 /* AddHabitView.swift */,
+				A72D383DCC63D02DAC2EE50D /* HabitListView.swift */,
+				838D4146112D2787168E51BA /* HabitRowView.swift */,
+			);
+			path = Habits;
+			sourceTree = "<group>";
+		};
+		FF23BE8287FE6C822CD5ACBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89071A5EF4B1DFB41CED1998 /* ContentView.swift */,
+				AABE2B3B3B32366EA928E91D /* Alarm */,
+				0907FACA6978526D128978EF /* Components */,
+				F4E6DEE44E058923C5EBB0E7 /* Habits */,
+				3E2AAEB47C05848213FB3780 /* Quotes */,
+				65A622D953CDEAA2E2785B72 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		136203A4F416A71D67CE22A3 /* MindChime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832F4EEEDCD35B9F0478C72E /* Build configuration list for PBXNativeTarget "MindChime" */;
+			buildPhases = (
+				30ECABB8C6468884D61BB9DF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindChime;
+			packageProductDependencies = (
+			);
+			productName = MindChime;
+			productReference = 4E33C37C11B8A0A1117818AA /* MindChime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		956965DF4D1A4C07E1A199B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 0F1CF4C815A629B8CF78D873 /* Build configuration list for PBXProject "MindChime" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 353DFA81067464E379BF9CC4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6AD686EDFB32EDD1BF551AAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				136203A4F416A71D67CE22A3 /* MindChime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30ECABB8C6468884D61BB9DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66CFE47E4F1EB7B3A6BE12D /* AddHabitView.swift in Sources */,
+				F36BB52934A0745C1BC92E59 /* AlarmDetailView.swift in Sources */,
+				12E663C9E352E8FCC013F92C /* AlarmListView.swift in Sources */,
+				4D586C22C9A6A76F984D06C0 /* AlarmViewModel.swift in Sources */,
+				9C57685A3B0C3E2982B00CC6 /* AudioService.swift in Sources */,
+				D325D051C66A4C8ECA3F79F8 /* ChimeAlarm.swift in Sources */,
+				EADD44E8803A55FAB7C5F756 /* ColorExtension.swift in Sources */,
+				339CD39ACEABEA071FC14B27 /* ContentView.swift in Sources */,
+				9E7240F0CADAB9093A10430F /* Habit.swift in Sources */,
+				2857A62C04952809DE01BF3C /* HabitCompletion.swift in Sources */,
+				042C51385E1937669AEDC514 /* HabitListView.swift in Sources */,
+				6FD6BF845372FB2961263B03 /* HabitRowView.swift in Sources */,
+				755591639D3DB202F009038D /* HabitsViewModel.swift in Sources */,
+				C0B247817CC592AE0AB7FD2C /* MindChimeApp.swift in Sources */,
+				2EF542D8F76425BCC3F9A767 /* NotificationService.swift in Sources */,
+				42C34C88A8B01D591089A4B0 /* Quote.swift in Sources */,
+				4BAE82CF43FE228F64A0DCD4 /* QuoteCardView.swift in Sources */,
+				16B21D342DB286E82FCBA286 /* QuoteCategory.swift in Sources */,
+				BB144C3740378DDDBA573F40 /* QuoteFeedView.swift in Sources */,
+				35F3EA58D8BABF36BFBC220D /* QuoteSeeder.swift in Sources */,
+				6E9CADFA5635B0169667BF21 /* QuotesViewModel.swift in Sources */,
+				17E1BF895D612F504EED75BB /* SettingsView.swift in Sources */,
+				AA7F7CA60811FB11D77337D4 /* SpeechService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4FFE27A5642CE888F8638EA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MindChime/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindchime.app;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A41366CB149409D23D6A094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MindChime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MindChime;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		A9CC02CE3BAB95E2783877EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = MindChime/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindchime.app;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F27364DFE90930B21A38EE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MindChime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MindChime;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F1CF4C815A629B8CF78D873 /* Build configuration list for PBXProject "MindChime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F27364DFE90930B21A38EE13 /* Debug */,
+				6A41366CB149409D23D6A094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		832F4EEEDCD35B9F0478C72E /* Build configuration list for PBXNativeTarget "MindChime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FFE27A5642CE888F8638EA5 /* Debug */,
+				A9CC02CE3BAB95E2783877EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 956965DF4D1A4C07E1A199B2 /* Project object */;
+}
