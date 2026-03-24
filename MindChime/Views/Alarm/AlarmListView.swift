@@ -1,5 +1,7 @@
-import SwiftUI
 import SwiftData
+import SwiftUI
+
+private let freeAlarmLimit = 3
 
 struct AlarmListView: View {
     @Query(sort: \ChimeAlarm.time) private var alarms: [ChimeAlarm]
@@ -7,6 +9,13 @@ struct AlarmListView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var viewModel = AlarmViewModel()
     @State private var selectedAlarm: ChimeAlarm?
+    @State private var store = StoreKitService.shared
+    @State private var showingPremium = false
+    @State private var showingPremiumLimit = false
+
+    private var canAddAlarm: Bool {
+        store.isPremium || alarms.count < freeAlarmLimit
+    }
 
     var body: some View {
         NavigationStack {
@@ -24,18 +33,30 @@ struct AlarmListView: View {
                     }
                 } else {
                     List {
-                        ForEach(alarms) { alarm in
-                            AlarmRowView(alarm: alarm) {
-                                viewModel.toggleAlarm(alarm, quotes: quotes, context: modelContext)
-                            }
-                            .contentShape(Rectangle())
-                            .onTapGesture {
-                                selectedAlarm = alarm
+                        if !store.isPremium && alarms.count >= freeAlarmLimit {
+                            Section {
+                                PremiumLimitBanner(limit: freeAlarmLimit, item: "chimes") {
+                                    showingPremium = true
+                                }
+                                .listRowInsets(EdgeInsets())
+                                .listRowBackground(Color.clear)
                             }
                         }
-                        .onDelete { indexSet in
-                            for index in indexSet {
-                                viewModel.deleteAlarm(alarms[index], context: modelContext)
+
+                        Section {
+                            ForEach(alarms) { alarm in
+                                AlarmRowView(alarm: alarm) {
+                                    viewModel.toggleAlarm(alarm, quotes: quotes, context: modelContext)
+                                }
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    selectedAlarm = alarm
+                                }
+                            }
+                            .onDelete { indexSet in
+                                for index in indexSet {
+                                    viewModel.deleteAlarm(alarms[index], context: modelContext)
+                                }
                             }
                         }
                     }
@@ -45,7 +66,11 @@ struct AlarmListView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        addAlarm()
+                        if canAddAlarm {
+                            addAlarm()
+                        } else {
+                            showingPremiumLimit = true
+                        }
                     } label: {
                         Image(systemName: "plus")
                     }
@@ -53,6 +78,18 @@ struct AlarmListView: View {
             }
             .sheet(item: $selectedAlarm) { alarm in
                 AlarmDetailView(alarm: alarm, quotes: quotes)
+            }
+            .sheet(isPresented: $showingPremium) {
+                PremiumView()
+            }
+            .alert("Chime Limit Reached", isPresented: $showingPremiumLimit) {
+                Button("Upgrade to Premium") {
+                    showingPremiumLimit = false
+                    showingPremium = true
+                }
+                Button("Cancel", role: .cancel) {}
+            } message: {
+                Text("Free accounts can have up to \(freeAlarmLimit) chimes. Upgrade to Premium for unlimited chimes.")
             }
         }
     }

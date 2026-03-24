@@ -1,15 +1,26 @@
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct QuoteFeedView: View {
     @Query(sort: \Quote.createdAt) private var allQuotes: [Quote]
     @State private var viewModel = QuotesViewModel()
-    @State private var showingFilters = false
+
+    private var dailyQuote: Quote? {
+        guard !allQuotes.isEmpty else { return nil }
+        let dayNumber = Calendar.current.ordinality(of: .day, in: .era, for: .now) ?? 0
+        return allQuotes[dayNumber % allQuotes.count]
+    }
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack(spacing: 16) {
+                    // Daily Thought card (always visible, not filtered)
+                    if let quote = dailyQuote {
+                        DailyThoughtCard(quote: quote)
+                            .padding(.horizontal)
+                    }
+
                     CategoryFilterChips(
                         selectedCategories: $viewModel.selectedCategories
                     )
@@ -35,6 +46,82 @@ struct QuoteFeedView: View {
                     }
                 }
             }
+        }
+    }
+}
+
+struct DailyThoughtCard: View {
+    @Bindable var quote: Quote
+    @State private var speechService = SpeechService.shared
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Label("Today's Thought", systemImage: "sun.max.fill")
+                    .font(.caption)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.orange)
+
+                Spacer()
+
+                Text(Date.now, style: .date)
+                    .font(.caption2)
+                    .foregroundStyle(.tertiary)
+            }
+
+            Text(quote.text)
+                .font(.headline)
+                .fontDesign(.serif)
+                .lineSpacing(4)
+                .foregroundStyle(.primary)
+
+            HStack {
+                Text("— \(quote.author)")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+
+                Spacer()
+
+                Button {
+                    if speechService.isSpeaking {
+                        speechService.stop()
+                    } else {
+                        AudioService.shared.playChimeSound()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                            speechService.speak(quote.text, author: quote.author)
+                        }
+                    }
+                } label: {
+                    Image(systemName: speechService.isSpeaking ? "stop.circle.fill" : "play.circle.fill")
+                        .font(.title3)
+                        .foregroundStyle(.orange)
+                        .contentTransition(.symbolEffect(.replace))
+                }
+                .buttonStyle(.plain)
+
+                ShareLink(
+                    item: "\"\(quote.text)\" — \(quote.author)",
+                    subject: Text("MindChime Daily Thought"),
+                    message: Text("Today's thought from MindChime")
+                ) {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        }
+        .padding()
+        .background(
+            LinearGradient(
+                colors: [Color.orange.opacity(0.10), Color.yellow.opacity(0.06)],
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            ),
+            in: RoundedRectangle(cornerRadius: 16)
+        )
+        .overlay {
+            RoundedRectangle(cornerRadius: 16)
+                .strokeBorder(Color.orange.opacity(0.18), lineWidth: 1)
         }
     }
 }

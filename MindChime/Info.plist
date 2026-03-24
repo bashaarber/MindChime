@@ -3,8 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>NSUserNotificationsUsageDescription</key>
-	<string>MindChime needs notifications to deliver your daily thoughts and habit reminders.</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>MindChime uses speech to read thoughts aloud.</string>
+	<string>MindChime uses notifications to deliver your daily thoughts and habit reminders at your chosen times.</string>
 </dict>
 </plist>

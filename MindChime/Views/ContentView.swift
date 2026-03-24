@@ -4,7 +4,7 @@ struct ContentView: View {
     @State private var selectedTab: Tab = .quotes
 
     enum Tab: String {
-        case quotes, chimes, habits, settings
+        case quotes, chimes, habits, journal, settings
     }
 
     var body: some View {
@@ -17,6 +17,9 @@ struct ContentView: View {
             }
             Tab(.habits, systemImage: "checkmark.circle.fill") {
                 HabitListView()
+            }
+            Tab(.journal, systemImage: "book.pages.fill") {
+                JournalView()
             }
             Tab(.settings, systemImage: "gearshape.fill") {
                 SettingsView()
@@ -32,6 +35,7 @@ extension ContentView.Tab: CaseIterable {
         case .quotes: return "Thoughts"
         case .chimes: return "Chimes"
         case .habits: return "Habits"
+        case .journal: return "Journal"
         case .settings: return "Settings"
         }
     }
