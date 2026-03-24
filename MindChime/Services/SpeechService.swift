@@ -20,7 +20,8 @@ final class SpeechService {
 
         let utterance = AVSpeechUtterance(string: fullText)
         let storedRate = UserDefaults.standard.double(forKey: "speechRate")
-        utterance.rate = Float(storedRate > 0 ? storedRate : AVSpeechUtteranceDefaultSpeechRate)
+        // Avoid Float initializer ambiguity with mixed Double/Float types.
+        utterance.rate = storedRate > 0 ? Float(storedRate) : AVSpeechUtteranceDefaultSpeechRate
         utterance.pitchMultiplier = 1.0
         utterance.preUtteranceDelay = 0.5
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")

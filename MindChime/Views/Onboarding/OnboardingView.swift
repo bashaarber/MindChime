@@ -62,11 +62,11 @@ struct OnboardingView: View {
                         Text(currentPage < pages.count - 1 ? "Continue" : "Get Started")
                             .font(.headline)
                             .frame(maxWidth: .infinity)
-                            .padding(.vertical, 16)
-                            .background(pages[currentPage].color)
-                            .foregroundStyle(.white)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .padding(.vertical, 6)
                     }
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.large)
+                    .tint(pages[currentPage].color)
                     .padding(.horizontal, 32)
                     .animation(.none, value: currentPage)
 

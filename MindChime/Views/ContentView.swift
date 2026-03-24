@@ -1,35 +1,35 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedTab: Tab = .quotes
+    @State private var selectedTab: AppTab = .quotes
 
-    enum Tab: String {
+    enum AppTab: String {
         case quotes, chimes, habits, journal, settings
     }
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            Tab(.quotes, systemImage: "quote.opening") {
+            Tab("Thoughts", systemImage: "quote.opening", value: AppTab.quotes) {
                 QuoteFeedView()
             }
-            Tab(.chimes, systemImage: "bell.fill") {
+            Tab("Chimes", systemImage: "bell.fill", value: AppTab.chimes) {
                 AlarmListView()
             }
-            Tab(.habits, systemImage: "checkmark.circle.fill") {
+            Tab("Habits", systemImage: "checkmark.circle.fill", value: AppTab.habits) {
                 HabitListView()
             }
-            Tab(.journal, systemImage: "book.pages.fill") {
+            Tab("Journal", systemImage: "book.pages.fill", value: AppTab.journal) {
                 JournalView()
             }
-            Tab(.settings, systemImage: "gearshape.fill") {
+            Tab("Settings", systemImage: "gearshape.fill", value: AppTab.settings) {
                 SettingsView()
             }
         }
-        .tint(.primary)
+        .tint(.accentColor)
     }
 }
 
-extension ContentView.Tab: CaseIterable {
+extension ContentView.AppTab: CaseIterable {
     var title: String {
         switch self {
         case .quotes: return "Thoughts"
