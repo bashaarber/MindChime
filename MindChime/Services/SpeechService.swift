@@ -19,7 +19,8 @@ final class SpeechService {
         }
 
         let utterance = AVSpeechUtterance(string: fullText)
-        utterance.rate = AVSpeechUtteranceDefaultSpeechRate * 0.9
+        let storedRate = UserDefaults.standard.double(forKey: "speechRate")
+        utterance.rate = Float(storedRate > 0 ? storedRate : AVSpeechUtteranceDefaultSpeechRate)
         utterance.pitchMultiplier = 1.0
         utterance.preUtteranceDelay = 0.5
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")

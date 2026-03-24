@@ -1,5 +1,5 @@
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct MindChimeApp: App {
@@ -8,7 +8,8 @@ struct MindChimeApp: App {
             Quote.self,
             Habit.self,
             HabitCompletion.self,
-            ChimeAlarm.self
+            ChimeAlarm.self,
+            JournalEntry.self
         ])
         let modelConfiguration = ModelConfiguration(
             schema: schema,
@@ -26,14 +27,18 @@ struct MindChimeApp: App {
         }
     }()
 
-    @Environment(\.scenePhase) private var scenePhase
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .onAppear {
-                    NotificationService.shared.requestAuthorization()
-                }
+            if hasSeenOnboarding {
+                ContentView()
+                    .onAppear {
+                        NotificationService.shared.requestAuthorization()
+                    }
+            } else {
+                OnboardingView()
+            }
         }
         .modelContainer(sharedModelContainer)
     }
