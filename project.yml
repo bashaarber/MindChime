@@ -1,6 +1,6 @@
-name: MindChime
+name: ChimeRise
 options:
-  bundleIdPrefix: com.mindchime
+  bundleIdPrefix: com.chimerise
   deploymentTarget:
     iOS: "18.0"
   xcodeVersion: "16.0"
@@ -12,7 +12,7 @@ settings:
     CURRENT_PROJECT_VERSION: 1
     GENERATE_INFOPLIST_FILE: YES
     INFOPLIST_FILE: MindChime/Info.plist
-    INFOPLIST_KEY_CFBundleDisplayName: MindChime
+    INFOPLIST_KEY_CFBundleDisplayName: Chime Rise
     INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.lifestyle"
     SWIFT_EMIT_LOC_STRINGS: YES
     ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
@@ -30,7 +30,7 @@ targets:
       - path: MindChime/Resources/PrivacyInfo.xcprivacy
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.mindchime.app
+        PRODUCT_BUNDLE_IDENTIFIER: com.chimerise.app
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES

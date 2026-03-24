@@ -31,7 +31,7 @@ struct SettingsView: View {
                                     .foregroundStyle(.yellow)
                             }
                             VStack(alignment: .leading, spacing: 2) {
-                                Text(store.isPremium ? "MindChime Premium" : "Upgrade to Premium")
+                                Text(store.isPremium ? "Chime Rise Premium" : "Upgrade to Premium")
                                     .fontWeight(.medium)
                                     .foregroundStyle(.primary)
                                 Text(store.isPremium ? "All features unlocked" : "Unlimited habits, journal & more")
@@ -89,7 +89,7 @@ struct SettingsView: View {
                     Button {
                         requestReview()
                     } label: {
-                        Label("Rate MindChime", systemImage: "star.fill")
+                        Label("Rate Chime Rise", systemImage: "star.fill")
                             .foregroundStyle(.primary)
                     }
 

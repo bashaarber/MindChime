@@ -5,8 +5,8 @@ import StoreKit
 final class StoreKitService {
     static let shared = StoreKitService()
 
-    static let monthlyID = "com.mindchime.premium.monthly"
-    static let annualID = "com.mindchime.premium.annual"
+    static let monthlyID = "com.chimerise.premium.monthly"
+    static let annualID = "com.chimerise.premium.annual"
 
     var isPremium: Bool = false
     var products: [Product] = []

@@ -59,8 +59,8 @@ struct QuoteCardView: View {
 
                 ShareLink(
                     item: "\"\(quote.text)\" — \(quote.author)",
-                    subject: Text("MindChime Thought"),
-                    message: Text("Check out this thought from MindChime")
+                    subject: Text("Chime Rise Thought"),
+                    message: Text("Check out this thought from Chime Rise")
                 ) {
                     Image(systemName: "square.and.arrow.up")
                         .font(.subheadline)

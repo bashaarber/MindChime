@@ -2,7 +2,7 @@ import SwiftData
 import SwiftUI
 
 @main
-struct MindChimeApp: App {
+struct ChimeRiseApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Quote.self,

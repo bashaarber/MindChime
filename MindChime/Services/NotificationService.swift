@@ -37,7 +37,7 @@ final class NotificationService {
             )
 
             let content = UNMutableNotificationContent()
-            content.title = "MindChime"
+            content.title = "Chime Rise"
             content.subtitle = alarm.label
             content.body = "\"\(quote.text)\" — \(quote.author)"
             content.sound = .default
