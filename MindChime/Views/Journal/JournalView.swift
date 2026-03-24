@@ -71,7 +71,7 @@ struct JournalView: View {
                     .font(.title2)
                     .fontWeight(.bold)
 
-                Text("Reflect on your day, track your mood, and grow with guided daily prompts. A Premium feature.")
+                Text("Reflect on your day, track your mood, and grow with guided daily prompts. Unlock with Chime Rise Premium.")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)

@@ -101,8 +101,8 @@ struct DailyThoughtCard: View {
 
                 ShareLink(
                     item: "\"\(quote.text)\" — \(quote.author)",
-                    subject: Text("MindChime Daily Thought"),
-                    message: Text("Today's thought from MindChime")
+                    subject: Text("Chime Rise Daily Thought"),
+                    message: Text("Today's thought from Chime Rise")
                 ) {
                     Image(systemName: "square.and.arrow.up")
                         .font(.subheadline)

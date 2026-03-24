@@ -27,11 +27,11 @@ struct PremiumView: View {
                             )
                             .symbolEffect(.pulse)
 
-                        Text("MindChime Premium")
+                        Text("Chime Rise Premium")
                             .font(.title)
                             .fontWeight(.bold)
 
-                        Text("Unlock your full potential for mindful living")
+                        Text("The mindful way to start every day")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)
